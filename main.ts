@@ -4,9 +4,9 @@ let stl : number
 let sth : number
 let tf: boolean
 stl = 0
-sth = 110
+    sth = 110
     p = input.rotation(Rotation.Pitch)
-    tf = (p < stl || p > sth)
+    tf = p < stl || p > sth
     return tf
 }
 
@@ -18,6 +18,7 @@ function desleep () {
     led.unplot(2, 2)
 }
 
+//ここまで判定　実行用
 basic.forever(function () {
     if (check()) {
         sleep()
