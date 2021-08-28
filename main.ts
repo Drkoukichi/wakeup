@@ -14,11 +14,13 @@ function check () //現在の本体の角度をもとに寝ているかの判断
 function sleep ()　//寝ていた場合の処理 
 {
     pins.digitalWritePin(0,1)
+    led.plot(2,2)
 }
 
 function desleep ()　//寝ていなかった場合、もしくは起床した場合 
 {
     pins.digitalWritePin(0, 0)
+    led.unplot(2,2)
 }
 
 //ここまで判定　実行用
