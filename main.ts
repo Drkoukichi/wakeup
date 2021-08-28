@@ -4,7 +4,7 @@ let stl : number
 let sth : number
 let tf: boolean
 stl = 0
-sth = 200
+sth = 110
     p = input.rotation(Rotation.Pitch)
     tf = (p < stl || p > sth)
     return tf
