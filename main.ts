@@ -1,10 +1,12 @@
 function check () {
     let p: number
-let st : number
+let stl : number
+let sth : number
 let tf: boolean
-st = 0
+stl = 0
+sth = 200
     p = input.rotation(Rotation.Pitch)
-    tf = p < st
+    tf = (p < stl || p < sth)
     return tf
 }
 
