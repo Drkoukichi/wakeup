@@ -6,7 +6,7 @@ let tf: boolean
 stl = 0
 sth = 200
     p = input.rotation(Rotation.Pitch)
-    tf = (p < stl || p < sth)
+    tf = (p < stl || p > sth)
     return tf
 }
 
